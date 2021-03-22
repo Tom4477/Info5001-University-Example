@@ -40,8 +40,11 @@ public class CourseLoad {
             sum = sum + sa.GetCourseStudentScore();
         }
 
+        if(seatassignments.size()!=0)
             return sum/seatassignments.size();
+        else
+            throw new NullPointerException();
 
     }
-    
+
 }
